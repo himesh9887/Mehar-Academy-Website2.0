@@ -18,7 +18,7 @@ export default function Hero() {
         ))}
       </Swiper>
       <Container className="relative z-10 flex min-h-screen items-center pt-28">
-        <motion.div className="mx-auto max-w-4xl text-center lg:mx-0 lg:text-left" initial={{ opacity: 0, y: 34 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, delay: 1 }}>
+        <motion.div className="mx-auto max-w-4xl text-center lg:mx-0 lg:text-left" initial={{ opacity: 0, y: 34 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }}>
           <span className="inline-flex rounded-full border border-white/25 bg-white/15 px-4 py-2 text-xs font-extrabold uppercase backdrop-blur-xl">Admission Open 2026-27</span>
           <h1 className="mt-5 text-[34px] font-black leading-tight sm:text-[60px] lg:text-[70px]">{school.name}</h1>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-white/80 sm:text-lg lg:mx-0">

@@ -39,13 +39,15 @@ export default function App() {
   const location = useLocation();
 
   useEffect(() => {
-    const timer = window.setTimeout(() => setLoading(false), 4300);
+    const timer = window.setTimeout(() => setLoading(false), 2500);
     return () => window.clearTimeout(timer);
   }, []);
+  if (loading) {
+  return <Loader />;
+}
 
   return (
     <>
-      <AnimatePresence mode="wait">{loading && <Loader />}</AnimatePresence>
       <ScrollProgress />
       <Topbar />
       <Navbar />
@@ -58,7 +60,7 @@ export default function App() {
           exit={{ opacity: 0, y: -16 }}
           transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
         >
-          <Suspense fallback={<RouteFallback />}>
+          <Suspense fallback={null}>
             <Routes location={location}>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />

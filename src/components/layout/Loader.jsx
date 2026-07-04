@@ -27,7 +27,7 @@ export default function Loader() {
   useEffect(() => {
     const messageTimer = window.setInterval(() => {
       setMessageIndex((current) => (current + 1) % loadingMessages.length);
-    }, 2000);
+    }, 1000);
 
     return () => window.clearInterval(messageTimer);
   }, []);
