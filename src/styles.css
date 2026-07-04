@@ -165,7 +165,7 @@
     height: 20rem;
     width: 20rem;
     background: rgba(30, 64, 175, 0.72);
-    animation: luxury-float-two 15s ease-in-out infinite;
+    animation: luxury-float-two 30s ease-in-out infinite;
   }
 
   .luxury-loader__mesh--three {

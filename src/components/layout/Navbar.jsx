@@ -26,7 +26,7 @@ export default function Navbar() {
       }`}
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.65, delay: 0.9 }}
+      transition={{ duration: 0.45, delay: 0.2 }}
     >
       <div className="flex min-w-0 items-center justify-between gap-3">
         <NavLink className="flex min-w-0 items-center gap-3" to="/" onClick={() => setOpen(false)}>
